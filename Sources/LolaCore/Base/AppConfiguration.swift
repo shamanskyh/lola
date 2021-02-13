@@ -15,6 +15,8 @@ public struct AppConfiguration {
   let authorizationToken: String
   /// App bundle ID
   let bundleId: String
+  /// Collapse ID
+  let collapseId: String
 
   /// New AppConfiguration wrapper
   /// - Parameters:
@@ -24,10 +26,12 @@ public struct AppConfiguration {
   public init(
     deviceToken: String,
     authorizationToken: String,
-    bundleId: String
+    bundleId: String,
+    collapseId: String
   ) {
     self.deviceToken = deviceToken
     self.authorizationToken = authorizationToken
     self.bundleId = bundleId
+    self.collapseId = collapseId
   }
 }
