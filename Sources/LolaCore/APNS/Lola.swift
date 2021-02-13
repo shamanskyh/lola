@@ -90,6 +90,7 @@ public struct Lola {
     request.addValue(type.rawValue, forHTTPHeaderField: "apns-push-type")
     request.addValue("bearer \(configuration.authorizationToken)", forHTTPHeaderField: "authorization")
     request.addValue(configuration.bundleId, forHTTPHeaderField: "apns-topic")
+    request.addValue(configuration.collapseId, forHTTPHeaderField: "apns-collapse-id")
     // Setup body
     request.httpBody = data.data(using: .utf8)
     return request
