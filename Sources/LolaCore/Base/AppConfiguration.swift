@@ -23,6 +23,7 @@ public struct AppConfiguration {
   ///   - deviceToken: Device token from https://developer.apple.com/documentation/uikit/uiapplicationdelegate/1622958-application
   ///   - authorizationToken: Authorization token form keys .p8 file, TODO: WIll be replaced with name of file
   ///   - bundleId: App bundle ID
+  ///   - collapseId: Collapse ID for threading
   public init(
     deviceToken: String,
     authorizationToken: String,
